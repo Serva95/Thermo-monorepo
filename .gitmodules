@@ -5,7 +5,7 @@
 [submodule "ThermoTools"]
 	path = ThermoTools
 	url = https://github.com/Serva95/ThermoTools.git
-	branch = 3.5.X
+	branch = opencode
 [submodule "ThermoWrapperK"]
 	path = ThermoWrapperK
 	url = https://github.com/Serva95/ThermoWrapperK.git

@@ -15,7 +15,7 @@ repositories stay independent in remote, branch model, history, and CI.)
 | Path | Repository | Pinned branch | Role |
 |---|---|---|---|
 | `ThermoSmartSpring/` | [Serva95/ThermoSmartSpring](https://github.com/Serva95/ThermoSmartSpring) | `opencode` | Control web app: business logic, routine scheduling, state persistence. **Conventions home of the whole system.** |
-| `ThermoTools/` | [Serva95/ThermoTools](https://github.com/Serva95/ThermoTools) | `3.5.X` | Headless decision backend: per-room on/off algorithm, relay action. Two trees: `3.5.X-K/` (active), `2.7.18-J/` (legacy, frozen). |
+| `ThermoTools/` | [Serva95/ThermoTools](https://github.com/Serva95/ThermoTools) | `opencode` | Headless decision backend: per-room on/off algorithm, relay action. Single canonical tree: `2.7.18-J/` (Java). |
 | `ThermoWrapperK/` | [Serva95/ThermoWrapperK](https://github.com/Serva95/ThermoWrapperK) | `master` | Always-on supervisor: version check, download, relaunch, Let's Encrypt certificate lifecycle. |
 
 All three run on the same host and share the same `thermo` database.

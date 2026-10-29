@@ -23,7 +23,7 @@ this repository.
 | Path | Branch | Build | Notes |
 |---|---|---|---|
 | `ThermoSmartSpring/` | `opencode` | `./gradlew build` | web app; MariaDB/Postgres |
-| `ThermoTools/` | `3.5.X` | `cd 3.5.X-K && ./gradlew build` | **no** top-level `gradlew` — it lives in `3.5.X-K/`; `2.7.18-J/` is frozen (legacy, do not modify) |
+| `ThermoTools/` | `opencode` | `cd 2.7.18-J && ./gradlew build` | **no** top-level `gradlew` — it lives in `2.7.18-J/`; the `2.7.18-J/` Java tree is canonical |
 | `ThermoWrapperK/` | `master` | `./gradlew build` | `contextLoads()` needs a reachable Postgres at its `spring.datasource.url` |
 
 ## Rules of the road
@@ -31,8 +31,7 @@ this repository.
 1. **Work happens in the component, commit happens in the component.**
    The umbrella only ever commits gitlink (pin) bumps plus its own
    `README.md` / `AGENTS.md` / `.gitignore` / `.gitmodules`.
-2. **Preserve local work.** `ThermoTools/3.5.X-K/` may carry uncommitted
-   work-in-progress; `ThermoWrapperK/src/main/resources/application.properties`
+2. **Preserve local work.** `ThermoWrapperK/src/main/resources/application.properties`
    is a live configuration file and must never be staged or committed.
    If touching a component repository with dirty state, commit by pathspec
    (`git commit -- <path>`), not `git add -A`.
