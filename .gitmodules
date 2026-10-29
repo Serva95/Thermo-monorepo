@@ -1,0 +1,12 @@
+[submodule "ThermoSmartSpring"]
+	path = ThermoSmartSpring
+	url = https://github.com/Serva95/ThermoSmartSpring.git
+	branch = opencode
+[submodule "ThermoTools"]
+	path = ThermoTools
+	url = https://github.com/Serva95/ThermoTools.git
+	branch = 3.5.X
+[submodule "ThermoWrapperK"]
+	path = ThermoWrapperK
+	url = https://github.com/Serva95/ThermoWrapperK.git
+	branch = master
