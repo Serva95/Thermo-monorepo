@@ -8,7 +8,7 @@ this repository.
 ## Read this first
 
 * **Conventions home:** `ThermoSmartSpring/`
-  `ThermoSmartSpring/adr/` (ADRs 0001–0005) + `INDEX.md` is the
+  `ThermoSmartSpring/adr/` (ADRs 0001–0006) + `INDEX.md` is the
   system's cross-component ADR catalogue; `CONVENTIONS.md` the shared
   authoring rules; `plan/` the work queue. Read these before making
   cross-component changes.
@@ -24,7 +24,7 @@ this repository.
 |---|---|---|---|
 | `ThermoSmartSpring/` | `opencode` | `./gradlew build` | web app; MariaDB/Postgres |
 | `ThermoTools/` | `opencode` | `cd 2.7.18-J && ./gradlew build` | **no** top-level `gradlew` — it lives in `2.7.18-J/`; the `2.7.18-J/` Java tree is canonical |
-| `ThermoWrapperK/` | `master` | `./gradlew build` | `contextLoads()` needs a reachable Postgres at its `spring.datasource.url` |
+| `ThermoWrapperK/` | `opencode` | `./gradlew build` | `contextLoads()` needs a reachable Postgres at its `spring.datasource.url` |
 
 ## Rules of the road
 
