@@ -23,7 +23,7 @@ this repository.
 | Path | Branch | Build | Notes |
 |---|---|---|---|
 | `ThermoSmartSpring/` | `opencode` | `./gradlew build` | web app; MariaDB/Postgres |
-| `ThermoTools/` | `opencode` | `cd 2.7.18-J && ./gradlew build` | **no** top-level `gradlew` — it lives in `2.7.18-J/`; the `2.7.18-J/` Java tree is canonical |
+| `ThermoTools/` | `opencode` | `./gradlew build` | `contextLoads()` needs a reachable Postgres at its `spring.datasource.url` |
 | `ThermoWrapperK/` | `opencode` | `./gradlew build` | `contextLoads()` needs a reachable Postgres at its `spring.datasource.url` |
 
 ## Rules of the road
